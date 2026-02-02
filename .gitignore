@@ -1,0 +1,116 @@
+# Dependencies
+**/node_modules/
+**/web_modules/
+**/jspm_packages/
+
+# Production builds
+**/dist/
+**/build/
+**/.next/
+**/out/
+**/.vite/
+**/.vitepress/
+
+# Logs
+*.log
+**/logs/
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+
+# Environment variables
+**/.env
+**/.env.*
+!**/.env.example
+**/.env.local
+
+# Runtime data
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# Coverage
+**/coverage/
+**/*.lcov
+**/.nyc_output/
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs and Editors
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Python / Backend (uv/FastAPI)
+**/__pycache__/
+**/*.py[cod]
+**/*.pyd
+**/*.so
+**/build/
+**/dist/
+**/develop-eggs/
+**/eggs/
+**/*.egg-info/
+**/.eggs/
+**/.installed.cfg
+**/*.egg
+**/MANIFEST
+
+# Virtual environments (uv creates .venv)
+**/venv/
+**/.venv/
+**/env/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+# UV specific
+**/.uv/
+**/uv.lock  # Include if library; ignore for apps if regenerating
+
+# Testing / Coverage
+**/.pytest_cache/
+**/.hypothesis/
+**/.tox/
+**/.nox/
+**/.coverage
+**/.mypy_cache/
+**/.dmypy.json
+**/.pyre/
+**/.pytype/
+
+# FastAPI/Uvicorn logs and DB
+**/*.log
+**/logs/
+**/*.db
+**/*.sqlite3
+**/*.sqlite3-journal
+
+# Jupyter/IPython
+**/.ipynb_checkpoints
+**/profile_default/
+**/ipython_config.py
+
+# Other Python tools
+**/.ruff_cache/
+**/.cache/
+**/htmlcov/
+
+# Parcel bundler
+**/.cache
+**/.parcel-cache
+
+# Temporary files
+**/*.tmp
+**/*.temp
+**/tmp/
+**/temp/
