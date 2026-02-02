@@ -14,7 +14,7 @@ def serialize_expense(expense):
     return {
         "id": str(expense["_id"]),
         "amount": float(expense["amount"]),
-        "category": expense["category"],
+        "category": expense["category"].lower(),
         "description": expense["description"],
         "date": expense["date"].strftime("%Y-%m-%d"),  # datetime to string
     }
@@ -31,7 +31,7 @@ async def get_all_expenses(
     
     # Add category filter if provided
     if category:
-        query["category"] = category.lower()  # Normalize to lowercase
+        query["category"] = category # Normalize to lowercase
     
     # Query database
     records = expense_collection.find(query).sort("date", -1).limit(100)
