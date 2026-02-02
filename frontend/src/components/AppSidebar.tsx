@@ -45,11 +45,11 @@ export function AppSidebar() {
                             <SidebarMenuButton
                                 asChild
                                 className={clsx(
-                                    isActive("/dashboard") &&
+                                    isActive("/") &&
                                     "bg-zinc-200 dark:bg-zinc-700 font-semibold"
                                 )}
                             >
-                                <Link to="/dashboard" className="flex items-center gap-3">
+                                <Link to="/" className="flex items-center gap-3">
                                     <CircleDollarSign className="w-4 h-4" />
                                     <span>Dashboard</span>
                                 </Link>

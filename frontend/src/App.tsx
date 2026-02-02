@@ -1,7 +1,6 @@
 import { Toaster } from "sonner";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { SidebarProvider } from "./components/ui/sidebar";
-import HomePage from "./pages/HomePage";
 import { AppSidebar } from "./components/AppSidebar";
 import DashBoard from "./pages/DashBoard";
 import ViewExpenses from "./pages/ViewExpenses";
@@ -12,8 +11,7 @@ export default function App() {
       <SidebarProvider>
         <AppSidebar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/dashboard" element={<DashBoard />} />
+          <Route path="/" element={<DashBoard />} />
           <Route path="/view-expenses" element={<ViewExpenses />} />
         </Routes>
         <Toaster position="top-right" />
